@@ -14,9 +14,13 @@
 @normal: ~"all and (min-width: 980px) and (max-width: 1199px)";
 @wide:   ~"all and (min-width: 1200px)";
 
+// Colors
+@fpo: #c2c2c2;
+@highlight: yellow;
+
 // Typography
 @base-font-size:16px;
-@base-line-height:1em;
+@base-line-height:1.4em;
 @space-before:1em;
 @space-after:1em;
 h1 {
@@ -62,16 +66,20 @@ dt {
 dd {
 	text-indent: 1em;
 }
-// Colors
-@lightgrey: #c2c2c2;
-
+mark {
+	background:@highlight;
+	font-style:normal;
+	font-weight: normal;
+	display:inline-block;
+	padding:0 0.25em;
+}
 // Layouts
 
 
 // Components
 .gallery { // the gallery component
 	.box {
-		background: @lightgrey;
+		background: @fpo;
 		height:100px;
 		margin-bottom: 1em !important;
 	}
