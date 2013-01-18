@@ -1,0 +1,181 @@
+@import 'reset.css';
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+h1 {
+  font-size: 22.4px;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+@media all and (min-width: 768px) and (max-width: 979px) {
+  h1 {
+    font-size: 28.8px;
+  }
+}
+@media all and (min-width: 980px) and (max-width: 1199px) {
+  h1 {
+    font-size: 38.4px;
+  }
+}
+@media all and (min-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+p,
+a,
+li,
+dl,
+dt,
+dd {
+  font-size: 16px;
+  line-height: 1em;
+}
+@media all and (min-width: 768px) and (max-width: 979px) {
+  p,
+  a,
+  li,
+  dl,
+  dt,
+  dd {
+    font-size: 19.2px;
+  }
+}
+@media all and (min-width: 980px) and (max-width: 1199px) {
+  p,
+  a,
+  li,
+  dl,
+  dt,
+  dd {
+    font-size: 22.4px;
+  }
+}
+@media all and (min-width: 1200px) {
+  p,
+  a,
+  li,
+  dl,
+  dt,
+  dd {
+    font-size: 25.6px;
+  }
+}
+p {
+  margin-bottom: 0.5em;
+}
+ul,
+dl,
+ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+dl {
+  margin-left: 1em;
+}
+dd {
+  text-indent: 1em;
+}
+.gallery .box {
+  background: #c2c2c2;
+  height: 100px;
+  margin-bottom: 1em !important;
+}
+@media all and (max-width: 767px) {
+  .gallery {
+    display: block;
+    width: 104.72972972972974%;
+    margin: 0 -2.364864864864865%;
+    *zoom: 1;
+  }
+  .gallery:before,
+  .gallery:after {
+    content: "";
+    display: table;
+  }
+  .gallery:after {
+    clear: both;
+  }
+  .gallery .box {
+    display: inline;
+    float: left;
+    width: 20.27027027027027%;
+    margin: 0 2.364864864864865%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 979px) {
+  .gallery {
+    display: block;
+    width: 103.15315315315314%;
+    margin: 0 -1.5765765765765765%;
+    *zoom: 1;
+  }
+  .gallery:before,
+  .gallery:after {
+    content: "";
+    display: table;
+  }
+  .gallery:after {
+    clear: both;
+  }
+  .gallery .box {
+    display: inline;
+    float: left;
+    width: 13.513513513513514%;
+    margin: 0 1.5765765765765765%;
+  }
+}
+@media all and (min-width: 980px) and (max-width: 1199px) {
+  .gallery {
+    display: block;
+    width: 101.57657657657657%;
+    margin: 0 -0.7882882882882882%;
+    *zoom: 1;
+  }
+  .gallery:before,
+  .gallery:after {
+    content: "";
+    display: table;
+  }
+  .gallery:after {
+    clear: both;
+  }
+  .gallery .box {
+    display: inline;
+    float: left;
+    width: 6.756756756756757%;
+    margin: 0 0.7882882882882882%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .gallery {
+    display: block;
+    width: 101.57657657657657%;
+    margin: 0 -0.7882882882882882%;
+    *zoom: 1;
+  }
+  .gallery:before,
+  .gallery:after {
+    content: "";
+    display: table;
+  }
+  .gallery:after {
+    clear: both;
+  }
+  .gallery .box {
+    display: inline;
+    float: left;
+    width: 31.756756756756754%;
+    margin: 0 0.7882882882882882%;
+    height: 16em;
+  }
+}

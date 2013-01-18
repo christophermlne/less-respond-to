@@ -1,0 +1,103 @@
+@import 'reset.css';
+
+// Grid
+@import 'grid.less';
+
+@column-width: 60;
+@gutter-width: 14;
+@columns: 12;
+@total-width: 100%;
+
+// Devices
+@mobile: ~"all and (max-width: 767px)";
+@tablet: ~"all and (min-width: 768px) and (max-width: 979px)";
+@normal: ~"all and (min-width: 980px) and (max-width: 1199px)";
+@wide:   ~"all and (min-width: 1200px)";
+
+// Typography
+@base-font-size:16px;
+@base-line-height:1em;
+@space-before:1em;
+@space-after:1em;
+h1 {
+	font-size:     @base-font-size * 1.4;
+	line-height: @base-line-height;
+	margin-bottom: 1em;
+	@media @tablet {
+		font-size: @base-font-size * 1.8;
+	}
+	@media @normal {
+		font-size: @base-font-size * 2.4;
+	}
+	@media @wide {
+		font-size: @base-font-size * 3.0;
+	}
+}
+p, a, li, dl, dt, dd {
+	font-size: @base-font-size;
+	line-height: @base-line-height;
+	@media @tablet {
+		font-size:@base-font-size * 1.2;
+	}
+	@media @normal {
+		font-size:@base-font-size * 1.4;
+	}
+	@media @wide {
+		font-size:@base-font-size * 1.6;
+	}
+}
+p {
+	margin-bottom: @space-after / 2;
+}
+ul,dl,ol {
+	margin-top:@space-before;
+	margin-bottom:@space-after;
+}
+dl {
+	margin-left: 1em;
+}
+dt {
+
+}
+dd {
+	text-indent: 1em;
+}
+// Colors
+@lightgrey: #c2c2c2;
+
+// Layouts
+
+
+// Components
+.gallery { // the gallery component
+	.box {
+		background: @lightgrey;
+		height:100px;
+		margin-bottom: 1em !important;
+	}
+	@media @mobile {
+		.row(4);
+		.box {
+			.column(1,4);
+		}
+	}
+	@media @tablet {
+		.row(6);
+		.box {
+			.column(1,6);
+		}
+	}
+	@media @normal {
+		.row(12);
+		.box {
+			.column(1,12);
+		}
+	}
+	@media @wide {
+		.row(12);
+		.box {
+			.column(4,12);
+			height:16em;
+		}
+	}
+}
