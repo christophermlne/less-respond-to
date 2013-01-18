@@ -74,9 +74,17 @@ mark {
 	padding:0 0.25em;
 }
 // Layouts
-
+// Page level styles go here
+	// Main
+	@media @wide {
+		body {
+			max-width: 1140px;
+			margin:0 auto;
+		}
+	}
 
 // Components
+// Object level styles go here
 .gallery { // the gallery component
 	.box {
 		background: @fpo;
